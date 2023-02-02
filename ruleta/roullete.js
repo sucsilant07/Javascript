@@ -1,11 +1,3 @@
-// Reduce speed roulette
-// @param {type} $owl
-// @param {type} speed
-// @returns {undefined}
-
-// Stop autoplay roulette
-// @returns {undefined}
-
 var stoping = false;
 var itemSelected = 0;
 var timer = 20;
