@@ -18,10 +18,6 @@ function stopAutoplay() {
     stoping = true;
 }
 
-function restart(){
-    timer = 20;
-}
-
 jQuery(function ($) {
     var $owl = $('.owl-carousel');
     
@@ -51,7 +47,6 @@ jQuery(function ($) {
     // Timer for 20 seconds
     var timerId = setInterval(function() {
         timer--;
-        $('#cuenta_regresiva').html = timer;
         if(timer === 0){
             stoping = false;
             // Random between 1 and 10
@@ -80,12 +75,8 @@ jQuery(function ($) {
                 // If element equals to random, stop roulette
                 $owl.trigger('stop.owl.autoplay');
                 clearInterval(timerId);
-                $time.removeAttr('disabled');
+                timer.removeAttr('disabled');
             }
         }
     });
-
-    // Showcase
-    slowSpeed($owl, 1400);
-
 });

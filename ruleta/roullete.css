@@ -14,27 +14,3 @@
     font-weight: 400;
     margin-top: 0rem;
 }
-.btn-jump::after {
-    content: '';
-    position: absolute;
-    left: 44%;
-    top: -30%;
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 20px solid #2b3843;
-    clear: both;
-}
-.btn-jump {
-    z-index: 999;
-    margin-top: 5px;
-    width: 300px;
-    position: relative;
-    background-color: #2b3843;
-    color: white;
-    padding: 20px;
-}
-.wrap-jump {
-    text-align: center;
-}
